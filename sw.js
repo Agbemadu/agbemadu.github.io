@@ -12,7 +12,8 @@ self.addEventListener('install', event => {
         `https://free.currencyconverterapi.com/api/v5/currencies`,
         `css/bootstrap.min.css`,
         `css/font-awesome/css/font-awesome.min.css`,
-        `js/idb.js`
+        `js/idb.js`,
+        `/imgs/bg_images.jpg`
       ])
           .then(() => self.skipWaiting());
     })
