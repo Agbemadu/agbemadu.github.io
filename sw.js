@@ -13,7 +13,10 @@ self.addEventListener('install', event => {
         `css/bootstrap.min.css`,
         `css/font-awesome/css/font-awesome.min.css`,
         `js/idb.js`,
-        `/imgs/bg_images.jpg`
+        `/imgs/bg_images.jpg`,
+        `https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css`,
+        `https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js`,
+        `https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js`
       ])
           .then(() => self.skipWaiting());
     })
