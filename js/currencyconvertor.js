@@ -24,9 +24,7 @@ fetch(currenciesUrl).then(response =>{
     }else{
         response.json().then(results =>{
             for (const myResult in results){
-                console.log(Object.entries(results)[0]);
                 for (const id in results[myResult]){
-                    console.log(id);
                     let option = document.createElement('option');
                     option.value = id;
                     option.text = id;
@@ -41,7 +39,6 @@ fetch(currenciesUrl).then(response =>{
                     selects.appendChild(option);
                 }
             }
-            console.log(results)
         })
     }
 })
